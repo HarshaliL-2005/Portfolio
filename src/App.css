@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #f4f4f4;
+  scroll-behavior: smooth;
+}
+
+.portfolio-wrapper {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #1c1f2b, #2b3a67);
+  color: #ffffff;
+  border-radius: 16px;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 {
+  font-size: 3.2rem;
+  margin-bottom: 0.5rem;
+  color: #66fcf1;
+  transition: text-shadow 0.3s ease;
+}
+
+.hero h1:hover {
+  text-shadow: 0 0 10px #66fcf1, 0 0 20px #45a29e;
+}
+
+.subtitle {
+  font-size: 1.4rem;
+  color: #c5c6c7;
+}
+
+.section {
+  background: #1f2833;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 14px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+}
+
+.section h2 {
+  color: #45a29e;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  border-left: 4px solid #66fcf1;
+  padding-left: 0.5rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.skills-grid img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  background: #0b0c10;
+  padding: 0.75rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.skills-grid img:hover {
+  transform: scale(1.1);
+  background: #45a29e;
+}
+
+.section ul {
+  padding-left: 1.2rem;
+  line-height: 1.8;
+}
+
+.contact a {
+  color: #66fcf1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* .footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #c5c6c7;
+  margin-top: 3rem;
+  padding-bottom: 2rem;
+} */
+
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .section {
+    padding: 1.5rem 1rem;
+  }
+
+  .skills-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skills-grid img {
+    width: 50px;
+    height: 50px;
+  }
+}
